@@ -18,17 +18,33 @@
         color: orange;
         background: black;
       }
-      a {
-        color: yellowgreen;
-      }
     </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+getTxt = function (){
+
+  $.ajax({
+    url:'README.md',
+    success: function (data){
+      //parse your data here
+      //you can split into lines using data.split('\n') 
+      //an use regex functions to effectively parse it
+    }
+  });
+}
+</script>
   </head>
   <body onload="main()">
     <h1>HI,</h1>
     <h2>Yinhui is here!!!</h2>
-    <p id="output_p"></p>
-    <script>
-            
+    <p id="output"></p>
+     
+    <script  language="javascript" runat="server" >
+      function main(){
+      document.getElementById('output').innerText = getTxt();
+      }
+      
     </script>
   </body>
 </html>
