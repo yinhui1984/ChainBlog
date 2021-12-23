@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Random Planet Facts...</title>
+    <title>ChainBlog</title>
     <meta
       name="description"
       content="the index page of chainblog"
@@ -19,32 +19,11 @@
         background: black;
       }
     </style>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-getTxt = function (){
-
-  $.ajax({
-    url:'README.md',
-    success: function (data){
-      //parse your data here
-      //you can split into lines using data.split('\n') 
-      //an use regex functions to effectively parse it
-    }
-  });
-}
-</script>
   </head>
-  <body onload="main()">
+  <body>
     <h1>HI,</h1>
     <h2>Yinhui is here!!!</h2>
-    <p id="output"></p>
-     
-    <script  language="javascript" runat="server" >
-      function main(){
-      document.getElementById('output').innerText = getTxt();
-      }
-      
-    </script>
+    <iframe allowtransparency="true" style="background:gray;" 
+    frameborder="0"  width="100%"  src="README.md"/>
   </body>
 </html>
