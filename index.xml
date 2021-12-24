@@ -13,7 +13,7 @@
       <pubDate>Fri, 24 Dec 2021 12:52:54 +0800</pubDate>
       
       <guid>http://localhost:1313/post/welcome/</guid>
-      <description>关于这个BLOG： 这个BLOG的所有内容均存储在IPFS链上，你可以直接通过https://ipfs.io/ipfs/QmYtKEmQ88f</description>
+      <description>关于这个BLOG： 这个BLOG的所有内容均存储在IPFS链上。 同时在Github上也有对应副本： https://github.com/jack0x001/ChainBlog.git 。 我使用了gohugo来自动生成网站 并使用</description>
     </item>
     
   </channel>
