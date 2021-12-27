@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Zhouyinhui&#39;s Space</title>
-    <link>/</link>
-    <description>Recent content on Zhouyinhui&#39;s Space</description>
+    <title>#ipfs# on Zhouyinhui&#39;s Space</title>
+    <link>/tags/#ipfs%23/</link>
+    <description>Recent content in #ipfs# on Zhouyinhui&#39;s Space</description>
     <image>
       <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Dec 2021 19:29:39 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Dec 2021 19:29:39 +0800</lastBuildDate><atom:link href="/tags/#ipfs%23/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何利用IFPS创建这个博客</title>
       <link>/posts/how_to_create_this_blog/</link>
@@ -26,17 +26,6 @@ cd MyBlog git init touch index.html echo &amp;#34;hi&amp;#34; &amp;gt;&amp;gt; i
   编译你的网站 hugo -D ，编译出来的静态网页的全部内容在MySite/public目录下
   在本地运行试试 hugo server -D , 不出意外，你应该能在http://localhost:1313上看到你的站点</description>
     </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>/posts/welcome/</link>
-      <pubDate>Fri, 24 Dec 2021 12:52:54 +0800</pubDate>
-      
-      <guid>/posts/welcome/</guid>
-      <description>The first article.</description>
-    </item>
-    
-    
     
   </channel>
 </rss>

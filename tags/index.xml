@@ -9,7 +9,34 @@
       <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Dec 2021 12:52:54 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Dec 2021 19:29:39 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#fleek#</title>
+      <link>/tags/#fleek%23/</link>
+      <pubDate>Mon, 27 Dec 2021 19:29:39 +0800</pubDate>
+      
+      <guid>/tags/#fleek%23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>#hugo#</title>
+      <link>/tags/#hugo%23/</link>
+      <pubDate>Mon, 27 Dec 2021 19:29:39 +0800</pubDate>
+      
+      <guid>/tags/#hugo%23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>#ipfs#</title>
+      <link>/tags/#ipfs%23/</link>
+      <pubDate>Mon, 27 Dec 2021 19:29:39 +0800</pubDate>
+      
+      <guid>/tags/#ipfs%23/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>#something else#</title>
       <link>/tags/#something-else%23/</link>

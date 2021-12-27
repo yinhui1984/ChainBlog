@@ -9,11 +9,11 @@
       <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Dec 2021 16:29:39 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Dec 2021 19:29:39 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何利用IFPS创建这个博客</title>
       <link>/posts/how_to_create_this_blog/</link>
-      <pubDate>Fri, 24 Dec 2021 16:29:39 +0800</pubDate>
+      <pubDate>Mon, 27 Dec 2021 19:29:39 +0800</pubDate>
       
       <guid>/posts/how_to_create_this_blog/</guid>
       <description>第1步：在Github上新建一个项目 登录你的Github账号，按照向导 新建一个 Repository
