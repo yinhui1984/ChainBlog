@@ -16,7 +16,15 @@
       <pubDate>Fri, 24 Dec 2021 16:29:39 +0800</pubDate>
       
       <guid>/posts/how_to_create_this_blog/</guid>
-      <description>TODO</description>
+      <description>第1步：在Github上新建一个项目 登录你的Github账号，按照向导 新建一个 Repository
+假设你新建的Repo为： https://github.com/yourUserName/MyBlog.git
+第2步： Clone项目到本地并尝试push git clone https://github.com/yourUserName/MyBlog.git 尝试新建一个文件和push
+cd MyBlog git init touch index.html echo &amp;#34;hi&amp;#34; &amp;gt;&amp;gt; index.html git add index.html git commit -m &amp;#34;add index.html&amp;#34; git branch -M main git remote add origin https://github.com/yourUserName/MyBlog.git git push -u origin main 尝试提交的时候，会让你输入github账号和token（gitbub弃用了密码登录，而是使用token）
+如果你还没有生成过token，可以到Github你账户下的settings -&amp;gt; Developer settings 下生成token
+第3步：使用hugo自动生成静态网站  安装hugo  brew install hugo   按照官方教程新建一个网站 官方教程： https://gohugo.io/getting-started/quick-start/
+假设你的网站名称叫MySite
+  编译你的网站 hugo -D ，编译出来的静态网页的全部内容在MySite/public目录下
+  在本地运行试试 hugo server -D , 不出意外，你应该能在http://localhost:1313上看到你的站点</description>
     </item>
     
     <item>
