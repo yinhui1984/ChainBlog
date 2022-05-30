@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>#golang# on Zhouyinhui&#39;s Space</title>
+    <link>/tags/#golang%23/</link>
+    <description>Recent content in #golang# on Zhouyinhui&#39;s Space</description>
+    <image>
+      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 30 May 2022 10:29:19 +0800</lastBuildDate><atom:link href="/tags/#golang%23/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Golang] 使用overseer实现APP重启</title>
+      <link>/posts/golang_overseer_restart_app/</link>
+      <pubDate>Mon, 30 May 2022 10:29:19 +0800</pubDate>
+      
+      <guid>/posts/golang_overseer_restart_app/</guid>
+      <description>[Golang] 使用overseer实现APP重启 前两天在一个项目中需要实现这样一个功能&amp;quot;点击一个按钮或通过API来重启后台服务&amp;quot;
+发现Github上有一个叫overseer的模块, 试用了一下,效果还不错
+使用方法很简单
+package main  import ( 	&amp;#34;fmt&amp;#34; 	&amp;#34;github.com/jpillora/overseer&amp;#34; 	&amp;#34;time&amp;#34; )  func main() { 	overseer.Run(overseer.Config{ 	Program: app, 	}) }  func app(overseer.State) {  	fmt.Println(&amp;#34;app started : &amp;#34; + time.Now().Format(&amp;#34;2022-01-02 03:04:05 pm&amp;#34;))  	fmt.Println(&amp;#34;Hello, 回车键重启APP&amp;#34;)  	fmt.Scanln()  	overseer.Restart() } 项目地址: https://github.com/jpillora/overseer
+其README中介绍了如何使用这个模块来优雅地进行自我升级.</description>
+    </item>
+    
+  </channel>
+</rss>

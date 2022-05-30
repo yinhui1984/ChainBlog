@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/#go%23/</loc>
+    <lastmod>2022-05-30T10:29:19+08:00</lastmod>
+  </url><url>
+    <loc>/tags/#golang%23/</loc>
+    <lastmod>2022-05-30T10:29:19+08:00</lastmod>
+  </url><url>
     <loc>/posts/golang_overseer_restart_app/</loc>
     <lastmod>2022-05-30T10:29:19+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
+    <lastmod>2022-05-30T10:29:19+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
     <lastmod>2022-05-30T10:29:19+08:00</lastmod>
   </url><url>
     <loc>/</loc>
@@ -18,9 +27,6 @@
     <lastmod>2021-12-27T19:29:39+08:00</lastmod>
   </url><url>
     <loc>/tags/#ipfs%23/</loc>
-    <lastmod>2021-12-27T19:29:39+08:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2021-12-27T19:29:39+08:00</lastmod>
   </url><url>
     <loc>/posts/how_to_create_this_blog/</loc>
