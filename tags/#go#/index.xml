@@ -9,7 +9,17 @@
       <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 30 May 2022 10:29:19 +0800</lastBuildDate><atom:link href="/tags/#go%23/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jun 2022 09:43:29 +0800</lastBuildDate><atom:link href="/tags/#go%23/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Golang]聊聊sync</title>
+      <link>/posts/go_talk_about_sync/</link>
+      <pubDate>Thu, 02 Jun 2022 09:43:29 +0800</pubDate>
+      
+      <guid>/posts/go_talk_about_sync/</guid>
+      <description>我们将用些简单的例子来尝试golang中sync包的各种有趣的情况
+一个简单的DEMO package main  import &amp;#34;fmt&amp;#34;  var ( 	sharedCounter = 0 )  func add(count int) { 	for i := 0; i &amp;lt; count; i++ { 	sharedCounter++ 	} }  func sub(count int) { 	for i := 0; i &amp;lt; count; i++ { 	sharedCounter-- 	} }  func show() { 	fmt.Println(sharedCounter) }  func main() { 	add(1000000) 	sub(1000000) 	show() } 程序很简单, 我们用一个共享变量sharedCounter作为一个计数器.</description>
+    </item>
+    
     <item>
       <title>[Golang] 使用overseer实现APP重启</title>
       <link>/posts/golang_overseer_restart_app/</link>
