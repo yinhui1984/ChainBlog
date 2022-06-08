@@ -3,24 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/tags/#go%23/</loc>
-    <lastmod>2022-06-02T09:43:29+08:00</lastmod>
+    <lastmod>2022-06-06T10:04:12+08:00</lastmod>
   </url><url>
     <loc>/tags/#golang%23/</loc>
-    <lastmod>2022-06-02T09:43:29+08:00</lastmod>
+    <lastmod>2022-06-06T10:04:12+08:00</lastmod>
+  </url><url>
+    <loc>/posts/golang_http_server/</loc>
+    <lastmod>2022-06-06T10:04:12+08:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2022-06-06T10:04:12+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-06-06T10:04:12+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-06-06T10:04:12+08:00</lastmod>
   </url><url>
     <loc>/tags/#sync%23/</loc>
     <lastmod>2022-06-02T09:43:29+08:00</lastmod>
   </url><url>
     <loc>/posts/go_talk_about_sync/</loc>
-    <lastmod>2022-06-02T09:43:29+08:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2022-06-02T09:43:29+08:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2022-06-02T09:43:29+08:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2022-06-02T09:43:29+08:00</lastmod>
   </url><url>
     <loc>/posts/golang_overseer_restart_app/</loc>

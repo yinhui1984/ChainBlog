@@ -9,7 +9,18 @@
       <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 02 Jun 2022 09:43:29 +0800</lastBuildDate><atom:link href="/tags/#golang%23/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 10:04:12 +0800</lastBuildDate><atom:link href="/tags/#golang%23/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Golang]Http Server</title>
+      <link>/posts/golang_http_server/</link>
+      <pubDate>Mon, 06 Jun 2022 10:04:12 +0800</pubDate>
+      
+      <guid>/posts/golang_http_server/</guid>
+      <description>简单的文件服务器 package main  import ( 	&amp;#34;log&amp;#34; 	&amp;#34;net/http&amp;#34; )  func main() { 	err := http.ListenAndServe(&amp;#34;:8080&amp;#34;, http.FileServer(http.Dir(&amp;#34;.&amp;#34;))) 	if err != nil { 	log.Fatal(err) 	} } 上面这个例子创建了一个以当前目录为站点跟目录的文件服务器, 我一般用这个来作为局域网文件共享.
+然后写一个函数放到bash.rc 或zshrc中
+#文件服务器 function fileserver(){ 	echo &amp;#34;start file server :12345&amp;#34; 	cat &amp;lt;&amp;lt;EOF | tee /tmp/fileserver.go | go run /tmp/fileserver.go package main import ( &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; ) func main() { err := http.ListenAndServe(&amp;#34;:12345&amp;#34;, http.FileServer(http.Dir(&amp;#34;.&amp;#34;))) if err !</description>
+    </item>
+    
     <item>
       <title>[Golang]聊聊sync</title>
       <link>/posts/go_talk_about_sync/</link>
