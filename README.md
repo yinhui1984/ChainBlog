@@ -1,2 +1,4 @@
 # ChainBlog
-something about blockchain i wanna write down
+something about tech i wanna write down
+
+https://jack0x001.github.io/ChainBlog/
