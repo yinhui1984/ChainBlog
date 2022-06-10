@@ -9,11 +9,11 @@
       <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Jun 2022 10:04:12 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 13:30:39 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>#go#</title>
       <link>/tags/#go%23/</link>
-      <pubDate>Mon, 06 Jun 2022 10:04:12 +0800</pubDate>
+      <pubDate>Fri, 10 Jun 2022 13:30:39 +0800</pubDate>
       
       <guid>/tags/#go%23/</guid>
       <description></description>
@@ -22,9 +22,18 @@
     <item>
       <title>#golang#</title>
       <link>/tags/#golang%23/</link>
-      <pubDate>Mon, 06 Jun 2022 10:04:12 +0800</pubDate>
+      <pubDate>Fri, 10 Jun 2022 13:30:39 +0800</pubDate>
       
       <guid>/tags/#golang%23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>#gorouting#</title>
+      <link>/tags/#gorouting%23/</link>
+      <pubDate>Fri, 10 Jun 2022 13:30:39 +0800</pubDate>
+      
+      <guid>/tags/#gorouting%23/</guid>
       <description></description>
     </item>
     

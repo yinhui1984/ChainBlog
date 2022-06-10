@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>#go# on Zhouyinhui&#39;s Space</title>
-    <link>/tags/#go%23/</link>
-    <description>Recent content in #go# on Zhouyinhui&#39;s Space</description>
+    <title>#gorouting# on Zhouyinhui&#39;s Space</title>
+    <link>/tags/#gorouting%23/</link>
+    <description>Recent content in #gorouting# on Zhouyinhui&#39;s Space</description>
     <image>
       <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Jun 2022 13:30:39 +0800</lastBuildDate><atom:link href="/tags/#go%23/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jun 2022 13:30:39 +0800</lastBuildDate><atom:link href="/tags/#gorouting%23/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Golang]goroutings本质</title>
       <link>/posts/golang_goroutings_under_the_hood/</link>
@@ -38,40 +38,6 @@
 Gorouting: Go处理并发问题的方式 开发人员喜欢Go的原因之一是用它来实现并发性是多么容易和有效。这是该语言固有的一部分。Goroutines利用了一个已经存在了一段时间的概念，叫做 &amp;ldquo;coroutines&amp;rdquo;，本质上意味着将一组独立执行的函数 &amp;ldquo;coroutines &amp;ldquo;复用到操作系统层面的一组实际线程上，这些线程运行在用户层面(用户空间)。这就是使coroutines具有难以置信的效率的原因。你可能想知道为什么？因为当一个程序阻塞时&amp;ndash;有些进程会因为很多原因导致线程阻塞&amp;ndash;比如调用一个阻塞的系统调用（比如从用户那里读取输入），运行时就会自动将同一操作系统线程上阻塞的程序后面排队的其他程序转移到不同的、可运行的线程，这样它们就不会被阻塞。这在一开始可能会有点让人难以消化，所以让我们用一个例子来证明。
   首先，我们假设我们有4个goroutines需要被复用到内核级线程上，以便得到执行。我们还假设我们只需要两个内核级线程。而且我们有一个单一的处理器。   现在让我们假设Go的运行时调度器决定将goroutines像这样（出于任何原因）突击到线程上。goroutine A和B将使用左边的内核线程运行，goroutine B和C将使用右边的线程运行。我们还假设goroutines将分别运行，从放置在goroutines池底部的goroutines开始，用环绕它们的边框演示。
   goroutines程序开始运行。但是，等等。&amp;ldquo;A &amp;ldquo;调用了一个阻塞的系统调用（例如read()语句）现在goroutine A是阻塞的，goroutine B也被阻塞了。   goroutine C 执行完毕   Go的运行时调度器现在也许会意识到，把goroutine B移到另一个可运行的线程上会是一个更好的主意，而不是永远等待goroutine A完成。   goroutine D 执行完毕   Goroutine B现在也完成了，而左边被Goroutine A占据的内核线程仍在阻塞中。   如果运行时调度器从不关心将阻塞的goroutines重新安排到另一个可运行的线程，那么goroutine B到现在也不会完成执行!</description>
-    </item>
-    
-    <item>
-      <title>[Golang]Http Server</title>
-      <link>/posts/golang_http_server/</link>
-      <pubDate>Mon, 06 Jun 2022 10:04:12 +0800</pubDate>
-      
-      <guid>/posts/golang_http_server/</guid>
-      <description>简单的文件服务器 package main  import ( 	&amp;#34;log&amp;#34; 	&amp;#34;net/http&amp;#34; )  func main() { 	err := http.ListenAndServe(&amp;#34;:8080&amp;#34;, http.FileServer(http.Dir(&amp;#34;.&amp;#34;))) 	if err != nil { 	log.Fatal(err) 	} } 上面这个例子创建了一个以当前目录为站点跟目录的文件服务器, 我一般用这个来作为局域网文件共享.
-然后写一个函数放到bash.rc 或zshrc中
-#文件服务器 function fileserver(){ 	echo &amp;#34;start file server :12345&amp;#34; 	cat &amp;lt;&amp;lt;EOF | tee /tmp/fileserver.go | go run /tmp/fileserver.go package main import ( &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; ) func main() { err := http.ListenAndServe(&amp;#34;:12345&amp;#34;, http.FileServer(http.Dir(&amp;#34;.&amp;#34;))) if err !</description>
-    </item>
-    
-    <item>
-      <title>[Golang]聊聊sync</title>
-      <link>/posts/go_talk_about_sync/</link>
-      <pubDate>Thu, 02 Jun 2022 09:43:29 +0800</pubDate>
-      
-      <guid>/posts/go_talk_about_sync/</guid>
-      <description>我们将用些简单的例子来尝试golang中sync包的各种有趣的情况
-一个简单的DEMO package main  import &amp;#34;fmt&amp;#34;  var ( 	sharedCounter = 0 )  func add(count int) { 	for i := 0; i &amp;lt; count; i++ { 	sharedCounter++ 	} }  func sub(count int) { 	for i := 0; i &amp;lt; count; i++ { 	sharedCounter-- 	} }  func show() { 	fmt.Println(sharedCounter) }  func main() { 	add(1000000) 	sub(1000000) 	show() } 程序很简单, 我们用一个共享变量sharedCounter作为一个计数器.</description>
-    </item>
-    
-    <item>
-      <title>[Golang] 使用overseer实现APP重启</title>
-      <link>/posts/golang_overseer_restart_app/</link>
-      <pubDate>Mon, 30 May 2022 10:29:19 +0800</pubDate>
-      
-      <guid>/posts/golang_overseer_restart_app/</guid>
-      <description>前两天在一个项目中需要实现这样一个功能&amp;quot;点击一个按钮或通过API来重启后台服务&amp;quot;
-发现Github上有一个叫overseer的模块, 试用了一下,效果还不错
-使用方法很简单
-package main  import ( 	&amp;#34;fmt&amp;#34; 	&amp;#34;github.com/jpillora/overseer&amp;#34; 	&amp;#34;time&amp;#34; )  func main() { 	overseer.Run(overseer.Config{ 	Program: app, 	}) }  func app(overseer.State) {  	fmt.Println(&amp;#34;app started : &amp;#34; + time.Now().Format(&amp;#34;2006-01-02 03:04:05 pm&amp;#34;))  	fmt.Println(&amp;#34;Hello, 回车键重启APP&amp;#34;)  	_, _ = fmt.Scanln()  	overseer.Restart() } 项目地址: https://github.com/jpillora/overseer
-其README中介绍了如何使用这个模块来优雅地进行自我升级.</description>
     </item>
     
   </channel>
